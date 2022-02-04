@@ -17,6 +17,7 @@ html, body {
 h1, h2, h3, h4, h5, h6, strong{
 	color: var(--mainText);
 	font-family: 'Inconsolata', monospace;
+	font-weight: 700;
 
 }
 
@@ -57,9 +58,59 @@ a{
 
 /*working with different screen size*/
 
+.hello{
+	display: grid;
+	border: dashed;
+	min-height: 15em;
+	justify-content: center;
+	align-content: center;
+}
+
+
+
+
 @media screen and (max-width: 1200px){
 	.main{
 	width: 95%;
 	}
+	.Intro{
+	width: 95%;
+	}
 }
 
+.main{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.intro{
+	background-color: var(--secondColor);
+	border: 1px solid;
+	/*shadow*/
+	-webkit-box-shadow: -16px 0px 16px 6px rgba(95, 95, 125, 1);
+	-moz-box-shadow: -16px 0px 16px 6px rgba(95, 95, 125, 1);
+	box-shadow: -16px 0px 16px 6px rgba(95, 95, 125, 1);
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 3em 28em; 
+	grid-template-areas: 
+		'Intro-Navigation Intro-Navigation'
+		'Intro-Left Intro-Right'
+	;
+}
+
+.Intro-Navigation{
+	grid-area: Intro-Navigation;
+	border: 1px dashed lightcoral;
+}
+
+.Intro-Lef{
+	grid-area: Intro-Lef;
+	border: 1px dashed lightcoral;
+}
+
+.Intro-Right{
+	grid-area: Intro-Right;
+	border: 1px dashed lightcoral;
+}
