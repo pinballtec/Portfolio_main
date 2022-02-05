@@ -60,7 +60,6 @@ a{
 
 .hello{
 	display: grid;
-	border: dashed;
 	min-height: 15em;
 	justify-content: center;
 	align-content: center;
@@ -85,7 +84,7 @@ a{
 
 .intro{
 	background-color: var(--secondColor);
-	border: 1px solid;
+	border-radius: 5px 5px 0 0;
 	/*shadow*/
 	-webkit-box-shadow: -16px 0px 16px 6px rgba(95, 95, 125, 1);
 	-moz-box-shadow: -16px 0px 16px 6px rgba(95, 95, 125, 1);
@@ -93,7 +92,7 @@ a{
 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 3em 28em; 
+	grid-template-rows: 2em 28em; 
 	grid-template-areas: 
 		'Intro-Navigation Intro-Navigation'
 		'Intro-Left Intro-Right'
@@ -102,15 +101,60 @@ a{
 
 .Intro-Navigation{
 	grid-area: Intro-Navigation;
-	border: 1px dashed lightcoral;
+	border-bottom: 1px solid var(--mainColor);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #A9A9A9;
+	border-radius: 5px 5px 0 0;
 }
 
 .Intro-Lef{
 	grid-area: Intro-Lef;
-	border: 1px dashed lightcoral;
 }
 
 .Intro-Right{
 	grid-area: Intro-Right;
-	border: 1px dashed lightcoral;
+}
+
+.dots{
+	display: flex;
+	padding: 10px;
+}
+
+#dot-1{
+	background-color: #FF0000;
+}
+
+#dot-2{
+	background-color: #00FF00;
+}
+
+#dot-3{
+	background-color: ;
+}
+
+
+
+
+.browser-dot{
+	background-color: black;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	margin: 5px;
+	-webkit-box-shadow: -3px 0px 5px 0px rgba(66, 68, 90, 1);
+	-moz-box-shadow: -3px 0px 5px 0px rgba(66, 68, 90, 1);
+	box-shadow: -3px 0px 5px 0px rgba(66, 68, 90, 1);
+}
+
+#contacts{
+	margin: 0;
+	padding: 10px;
+}
+
+#contacts li{
+	display: inline-block;
+	margin-right: 5px;
+	margin-left: 5px;
 }
