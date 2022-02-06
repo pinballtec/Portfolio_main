@@ -6,6 +6,9 @@
 
 	--mainText: black;
 	--secondText: #808080;
+
+	/*needs to change color in deploy*/
+	--DotChangeColor: #FF69B4;
 }
 
 
@@ -92,7 +95,6 @@ a{
 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 2em 28em; 
 	grid-template-areas: 
 		'Intro-Navigation Intro-Navigation'
 		'Intro-Left Intro-Right'
@@ -107,6 +109,34 @@ a{
 	align-items: center;
 	background-color: #A9A9A9;
 	border-radius: 5px 5px 0 0;
+}
+
+#photo{
+	display: block;
+	border: 1px solid var(--borderCoror);
+	margin: 0 auto;
+	height: 200px;
+	width: 200px;
+	object-fit: cover;
+}
+
+#JS-Theem-dots{
+	display: flex;
+	justify-content: center;
+}
+
+.Js-dot{
+	height: 20px;
+	width: 20px;
+	background-color: black;
+	border-radius: 50%;
+	cursor: pointer;
+	margin: 5px;
+	border: 2px solid var(--DotChangeColor);
+}
+
+.Js-dot:hover{
+	border-width: 5px; 
 }
 
 .Intro-Lef{
