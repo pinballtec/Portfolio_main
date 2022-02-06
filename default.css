@@ -1,6 +1,6 @@
 :root {
 	--mainColor: #00FFFF;
-	--secondColor: #F0E68C;
+	--secondColor: #5F9EA0;
 
 	--borderCoror: #c1c1c1;
 
@@ -8,7 +8,9 @@
 	--secondText: #808080;
 
 	/*needs to change color in deploy*/
-	--DotChangeColor: #FF69B4;
+	--DotChangeColor: #D8BFD8;
+
+	--Color1-2: #FFF5EE;
 }
 
 
@@ -68,18 +70,6 @@ a{
 	align-content: center;
 }
 
-
-
-
-@media screen and (max-width: 1200px){
-	.main{
-	width: 95%;
-	}
-	.Intro{
-	width: 95%;
-	}
-}
-
 .main{
 	width: 1200px;
 	margin: 0 auto;
@@ -103,11 +93,11 @@ a{
 
 .Intro-Navigation{
 	grid-area: Intro-Navigation;
-	border-bottom: 1px solid var(--mainColor);
+	border-bottom: px solid var(--mainColor);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #A9A9A9;
+	background-color: #00FFFF;
 	border-radius: 5px 5px 0 0;
 }
 
@@ -139,14 +129,85 @@ a{
 	border-width: 5px; 
 }
 
-.Intro-Lef{
-	grid-area: Intro-Lef;
+/*Buttons for js-change*/
+
+#white-dot{
+	background-color: #fff ;
 }
 
+#blue-dot{
+	background-color: #0000FF ;
+}
+
+#black-dot{
+	background-color: #000000;
+}
+
+#red-dot{
+	background-color: #DC143C ;
+}
+
+/*Left column(About me section)*/
+.Intro-Left{
+	grid-area: Intro-Left;
+	display: grid;
+	align-content: center;
+	padding-left: 200px;
+}
+
+#About_Me{
+	width: 300px;
+	background-color: var(--Color1-2);
+	border: 2px solid var(--borderCoror);
+	padding: 15px;
+	position: relative;
+}
+
+#shadow_AboutMe{
+	background-color: #f0ead6;
+	width: 300px;
+	height: 180px;
+	padding-left: 30px;
+	padding-top: 30px;
+}
+
+/*Right column(My picture with JS buttons)*/
 .Intro-Right{
 	grid-area: Intro-Right;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
+.corner{
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	border: 1.5px solid #17a2b8;
+	background-color: #fff;
+	position: absolute;
+}
+
+#corner_n1{
+	top: -5px;
+	left: -5px;
+}
+
+#corner_n2{
+	top: -5px;
+	right: -5px;
+}
+
+#corner_n3{
+	bottom: -5px;
+	left: -5px;
+}
+
+#corner_n4{
+	bottom: -5px;
+	right: -5px;
+}
+
+/*dots for the top-window*/
 .dots{
 	display: flex;
 	padding: 10px;
@@ -163,8 +224,6 @@ a{
 #dot-3{
 	background-color: ;
 }
-
-
 
 
 .browser-dot{
@@ -187,4 +246,10 @@ a{
 	display: inline-block;
 	margin-right: 5px;
 	margin-left: 5px;
+}
+
+@media screen and (max-width: 1200px){
+	.main{
+	width: 95%;
+	}
 }
