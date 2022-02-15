@@ -1,5 +1,13 @@
 console.log('Its working')
 
+let theme = localStorage.getItem('theme')
+
+if(theme == null){
+    setTheme('light')
+}else{
+    setTheme(theme)
+}
+
 let Js_Dot = document.getElementsByClassName('Js-dot')
 
 for (var i=0; Js_Dot.length > i; i++){
@@ -26,4 +34,7 @@ function setTheme(mode){
 	if(mode == 'blue'){
 		document.getElementById('theme-style').href = 'blue.css'
 	}
+
+	localStorage.setItem('theme', mode)
+
 }
