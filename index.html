@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Questrial&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 
      <link rel="stylesheet" type="text/css" href="default.css">
+
+     <link id = "theme-style" rel="stylesheet" type="text/css" href="">
  </head>
  <body>
         <section class = 's1'>
@@ -52,10 +54,10 @@
                                 <img id='photo' src="img/test.jpg">
                                 <h5 style="text-align: center;line-height: 0;">Some JS showcase</h5>
                                 <div id = "JS-Theem-dots">
-                                    <div id = "white-dot" class = "Js-dot"></div>
-                                    <div id = "red-dot" class = "Js-dot"></div>
-                                    <div id = "black-dot" class = "Js-dot"></div>
-                                    <div id = "blue-dot" class = "Js-dot"></div>
+                                    <div data-mode = "light" id = "white-dot" class = "Js-dot"></div>
+                                    <div data-mode = "red" id = "red-dot" class = "Js-dot"></div>
+                                    <div data-mode = "black" id = "black-dot" class = "Js-dot"></div>
+                                    <div data-mode = "blue" id = "blue-dot" class = "Js-dot"></div>
                                 </div>
                             </div>
                     </div>
@@ -124,6 +126,7 @@
                 <h3 style="text-align: center;">Contact form</h3>
 
                 <form id = "contact_form">
+
                     <a name="contact"></a>
 
                     <label>Name</label>
@@ -142,5 +145,8 @@
                 </form>
             </div>
         </section>
+
+        <script type="text/javascript" src="script.js"></script>
+
  </body>
 </html>

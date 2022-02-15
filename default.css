@@ -13,6 +13,8 @@
 	--Color1-2: #FFF5EE;
 
 	--btnColor: black;
+
+	--shadow-skills: #f0ead6;
 }
 
 
@@ -267,7 +269,7 @@ a{
 #skills{
 	display: flex;
 	justify-content: space-evenly;
-	background-color: #f0ead6; 
+	background-color: var(--shadow-skills); 
 }
 
 .links-to-social-media{
