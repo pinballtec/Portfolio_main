@@ -228,15 +228,15 @@ a{
 }
 
 #dot-1{
-	background-color: #FF0000;
+	background-color: #FC6058;
 }
 
 #dot-2{
-	background-color: #00FF00;
+	background-color: #FEC02F;
 }
 
 #dot-3{
-	background-color: ;
+	background-color: #2ACA3E;
 }
 
 
@@ -246,9 +246,10 @@ a{
 	width: 15px;
 	border-radius: 50%;
 	margin: 5px;
-	-webkit-box-shadow: -3px 0px 5px 0px rgba(66, 68, 90, 1);
-	-moz-box-shadow: -3px 0px 5px 0px rgba(66, 68, 90, 1);
-	box-shadow: -3px 0px 5px 0px rgba(66, 68, 90, 1);
+
+	-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
 }
 
 #contacts{
@@ -279,7 +280,7 @@ a{
 
 .post-title{
 	color: black;
-	margin: 0;
+	margin: 
 }
 
 .post-intro{
