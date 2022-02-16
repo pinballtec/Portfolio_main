@@ -1,11 +1,11 @@
 :root {
-	--mainColor: #00FFFF;
+	--mainColor: #00CED1;
 	--secondColor: #5F9EA0;
 
 	--borderCoror: #c1c1c1;
 
 	--mainText: black;
-	--secondText: #808080;
+	--secondText: #4b5156;
 
 	/*needs to change color in deploy*/
 	--DotChangeColor: #D8BFD8;
@@ -14,7 +14,7 @@
 
 	--btnColor: black;
 
-	--shadow-skills: #f0ead6;
+	--shadow-skills: #FFF5EE;
 }
 
 
@@ -105,7 +105,7 @@ a{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #00FFFF;
+	background-color: var(--mainColor);
 	border-radius: 5px 5px 0 0;
 }
 
@@ -113,7 +113,7 @@ a{
 	display: block;
 	border: 1px solid var(--borderCoror);
 	margin: 0 auto;
-	height: 200px;
+	height: 300px;
 	width: 200px;
 	object-fit: cover;
 }
@@ -362,3 +362,6 @@ a{
 	font-size: 14px;
 }
 
+#some_cont{
+	color: black;
+}
