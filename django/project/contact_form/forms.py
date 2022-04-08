@@ -10,7 +10,7 @@ class ContactForm(ModelForm):
         widgets = {
             'message': Textarea(
                 attrs={
-                    'placeholder': 'Напишите тут ваше сообщение'
+                    'placeholder': 'Place your message here'
                 }
             )
         }

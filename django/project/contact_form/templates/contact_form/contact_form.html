@@ -34,7 +34,7 @@
                                     <div id='dot-3' class="browser-dot"></div>
                                 </div>
                                 <ul id="contacts">
-                                    <li><a id = "some_cont" href="index.html#contact">Contact</a></li>
+                                    <li><a id = "some_cont" href="contact_form.html#contact">Contact</a></li>
                                 </ul>
                             </div>
 
@@ -43,7 +43,7 @@
                                     <div id="About_Me">
                                         <div id = "corner_n1" class = "corner"></div>
                                         <div id = "corner_n2" class = "corner"></div>
-                                        <h1>What i'm doing?</h1>
+                                        <h3>What i'm doing?</h3>
                                         <p>I'm Python developer</p>
                                         <div id = "corner_n3" class = "corner"></div>
                                         <div id = "corner_n4" class = "corner"></div>
@@ -52,7 +52,7 @@
                             </div>
 
                             <div class="Intro-Right">
-                                <img id='photo' src="img/photo_3.jpg">
+                                <img id='photo' src="{% static 'img/photo_3.jpg' %}">
                                 <h5 style="text-align: center;line-height: 0;">Some JS showcase</h5>
                                 <div id = "JS-Theem-dots">
                                     <div data-mode = "light" id = "white-dot" class = "Js-dot"></div>
@@ -123,7 +123,7 @@
                 <div class="post-wrapper">
                     <div>
                         <div class="post">
-                                <img class = "potrfolio" src="img/scrapy.png">
+                                <img class = "potrfolio" src="{% static 'img/scrapy.png' %}">
                                 <div class="post-prewiew">
                                     <h6 class="post-title">Web-Crawler</h6>
                                     <p class="post-intro">Web spider to parse web-pages</p>
@@ -135,7 +135,7 @@
 
                     <div>
                         <div class="post">
-                                <img class = "potrfolio" src="img/To_Do_app.png">
+                                <img class = "potrfolio" src="{% static 'img/To_Do_app.png' %}">
                                 <div class="post-prewiew">
                                     <h6 class="post-title">To Do Rest-Api on Django</h6>
                                     <p class="post-intro">To-Do app using Rest Api and Django</p>
@@ -159,12 +159,19 @@
             </div>
         </section>
 
-        <form method="POST">
-            {% csrf_token %}
-            {{ form }}
-            <input type="submit">
-        </form>
+        <section class = 's2'>
+            <div class="main">
+                <h3 style="text-align: center;">Contact form</h3>
 
-        <script type="text/javascript" src="script.js"></script>
+                <form id = "contact_form" method="POST">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <input type="submit">
+                </form>
+                
+            </div>
+        </section>
+        <script type="text/javascript"> let static = "/static/styles" </script>
+        <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 </body>
 </html>
