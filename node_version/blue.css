@@ -1,0 +1,18 @@
+:root {
+	--mainColor: blue;
+	--secondColor: blue;
+
+	--borderCoror: #164D56;
+
+	--mainText: #fff;
+	--secondText: #eeeeee;
+
+	/*needs to change color in deploy*/
+	--DotChangeColor: #D8BFD8;
+
+	--Color1-2: blue;
+
+	--btnColor: black;
+
+	--shadow-skills: blue;
+}
